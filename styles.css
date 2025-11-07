@@ -72,3 +72,35 @@ footer {
     bottom: 0;
     width: 100%;
 }
+#despre {
+    background-color: #655d5d;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+#despre h2{
+    color: #333;
+}
+#galerie {
+  padding: 2rem;
+}
+
+#galerie .grid-galerie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#galerie img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/* Media query pentru ecrane sub 600px */
+@media (max-width: 600px) {
+  #galerie .grid-galerie {
+    grid-template-columns: 1fr;
+  }
+}
